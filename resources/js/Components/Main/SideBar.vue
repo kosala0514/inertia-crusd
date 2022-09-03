@@ -6,7 +6,7 @@
             <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
                 aria-hidden="true" id="iconSidenav"></i>
             <a class="navbar-brand m-0" :href="route('dashboard')">
-                <img src="/img/logo/logo.png" alt="main_logo" width="200">
+                <img src="assets/img/logos/todo.svg" alt="main_logo" width="200">
             </a>
         </div>
         <hr class="horizontal dark mt-0">
@@ -19,11 +19,62 @@
                             class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
                             <i class="ni ni-shop text-primary text-sm opacity-10"></i>
                         </div>
-                        <span class="nav-link-text ms-1">Dashboard</span>
+                        <span class="nav-link-text ms-1">DASHBOARD</span>
                     </Link>
                 </li>
-                <li class="nav-item mt-3">
-                    <h6 class="ps-4  ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Main</h6>
+                <li class="nav-item">
+                    <Link :href="route('projects')" class="active-preloader nav-link" aria-expanded="false">
+                        <div
+                            class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
+                            <i class="ni ni-folder-17 text-primary text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">PROJECTS</span>
+                    </Link>
+                </li>
+                <li class="nav-item">
+                    <Link href="#" class="active-preloader nav-link" aria-expanded="false">
+                        <div
+                            class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
+                            <i class="ni ni-hat-3 text-primary text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">MY TASKS</span>
+                    </Link>
+                </li>
+                <li class="nav-item">
+                    <Link href="#" class="active-preloader nav-link"  aria-expanded="false">
+                        <div
+                            class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
+                            <i class="ni ni-calendar-grid-58 text-primary text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">CALENDAR</span>
+                    </Link>
+                </li>
+                <li class="nav-item">
+                    <Link href="#" class="active-preloader nav-link"  aria-expanded="false">
+                        <div
+                            class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
+                            <i class="ni ni-chart-pie-35 text-primary text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">TIME MANAGE</span>
+                    </Link>
+                </li>
+                <li class="nav-item">
+                    <Link href="#" class="active-preloader nav-link"  aria-expanded="false">
+                        <div
+                            class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
+                            <i class="ni ni-chart-bar-32 text-primary text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">REPORTS</span>
+                    </Link>
+                </li>
+                <li class="nav-item">
+                    <Link href="#" class="active-preloader nav-link" aria-expanded="false">
+                        <div
+                            class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
+                            <i class="ni ni-settings-gear-65 text-primary text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">SETTINGS</span>
+                    </Link>
                 </li>
             </ul>
         </div>

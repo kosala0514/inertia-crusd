@@ -14,9 +14,14 @@
                 </li>
                 <ul class="navbar-nav justify-content-end">
                     <li class="nav-item dropdown d-flex align-items-center">
+                        <a href="javascript:;" class="nav-link text-white p-0" id="user-dropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-user me-sm-1"></i>
+                            <span class="d-sm-inline d-none">Name</span>
+                        </a>
                         <ul class="dropdown-menu dropdown-menu-end px-2 py-2 me-sm-n4" aria-labelledby="user-dropdown">
                             <li class="mb-2">
-                                <a class="dropdown-item border-radius-md" href="#">
+                                <a class="dropdown-item border-radius-md" href="{{ route('profile.show') }}">
                                     <i class="fa fa-user-circle-o me-sm-1"></i>
                                     <span>Profile</span>
                                 </a>

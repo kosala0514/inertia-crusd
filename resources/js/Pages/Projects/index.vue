@@ -16,8 +16,12 @@
                                     <li class="breadcrumb-item active" aria-current="page">
                                         Dashboard
                                     </li>
+                                    <li class="breadcrumb-item active" aria-current="page">
+                                        Projects
+                                    </li>
                                 </ol>
                             </nav>
+                            <a href="" class="btn btn-success">Add</a>
                         </div>
                     </div>
                 </div>
@@ -27,7 +31,7 @@
             <div class="row mt-3">
                 <div class="col-lg-12">
                     <div class="row">
-                        <h3>Want to implemrnt</h3>
+                        <h3>Projects</h3>
                     </div>
                 </div>
             </div>
