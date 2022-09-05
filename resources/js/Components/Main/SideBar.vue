@@ -10,7 +10,7 @@
             </a>
         </div>
         <hr class="horizontal dark mt-0">
-        <div class="collapse navbar-collapse  w-auto h-auto" id="sidenav-collapse-main">
+        <div class="collapse navbar-collapse w-auto h-auto {{ in_array($curr_url, ['projects']) ? 'show' : '' }}" id="sidenav-collapse-main">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <Link href="/" :class="{ 'active': route().current() == 'dashboard' }"
@@ -23,7 +23,7 @@
                     </Link>
                 </li>
                 <li class="nav-item">
-                    <Link :href="route('projects')" class="active-preloader nav-link" aria-expanded="false">
+                    <Link class="active-preloader nav-link" :class="{ 'active': route().current() == 'projects' }" :href="route('projects')">
                         <div
                             class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
                             <i class="ni ni-folder-17 text-primary text-sm opacity-10"></i>
